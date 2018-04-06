@@ -39,7 +39,7 @@ public class Test {
 
     // 在类上加 final 修饰符, 报错 java.lang.IllegalArgumentException: Cannot subclass final class class cn.cecurio.proxy.dynamic.cglib.Test$Foo
     // 在方法上加 final 修饰符, 不报错, 但是只执行此类中原本的实现, 而不执行生成的代理类的 intercept() 方法
-    static class Foo {
+    static final class Foo {
         public void bar() {
             System.out.println("执行Foo.bar方法");
         }

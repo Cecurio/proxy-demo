@@ -13,16 +13,24 @@ public class CountProxy implements Count {
     }
 
     public void queryCount() {
-        System.out.println("事务处理之前");
+        before();
         // 调用委托类的方法;
         countImpl.queryCount();
-        System.out.println("事务处理之后");
+        after();
     }
 
     public void updateCount() {
-        System.out.println("事务处理之前");
+        before();
         // 调用委托类的方法;
         countImpl.updateCount();
-        System.out.println("事务处理之后");
+        after();
+    }
+
+    private void before() {
+        System.out.println("===事务处理之前===");
+    }
+
+    private void after() {
+        System.out.println("===事务处理之后===");
     }
 }

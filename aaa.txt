@@ -1,0 +1,230 @@
+public final class ProxyUserService extends java.lang.reflect.Proxy implements cn.cecurio.proxy.dynamic.jdk.UserService {
+  public ProxyUserService(java.lang.reflect.InvocationHandler) throws ;
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #8                  // Method java/lang/reflect/Proxy."<init>":(Ljava/lang/reflect/InvocationHandler;)V
+       5: return
+
+  public final boolean equals(java.lang.Object) throws ;
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field java/lang/reflect/Proxy.h:Ljava/lang/reflect/InvocationHandler;
+       4: aload_0
+       5: getstatic     #20                 // Field m1:Ljava/lang/reflect/Method;
+       8: iconst_1
+       9: anewarray     #22                 // class java/lang/Object
+      12: dup
+      13: iconst_0
+      14: aload_1
+      15: aastore
+      16: invokeinterface #28,  4           // InterfaceMethod java/lang/reflect/InvocationHandler.invoke:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+      21: checkcast     #30                 // class java/lang/Boolean
+      24: invokevirtual #34                 // Method java/lang/Boolean.booleanValue:()Z
+      27: ireturn
+      28: athrow
+      29: astore_2
+      30: new           #42                 // class java/lang/reflect/UndeclaredThrowableException
+      33: dup
+      34: aload_2
+      35: invokespecial #45                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      38: athrow
+    Exception table:
+       from    to  target type
+           0    28    28   Class java/lang/Error
+           0    28    28   Class java/lang/RuntimeException
+           0    28    29   Class java/lang/Throwable
+
+  public final void add(java.lang.String, java.lang.String) throws ;
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field java/lang/reflect/Proxy.h:Ljava/lang/reflect/InvocationHandler;
+       4: aload_0
+       5: getstatic     #50                 // Field m3:Ljava/lang/reflect/Method;
+       8: iconst_2
+       9: anewarray     #22                 // class java/lang/Object
+      12: dup
+      13: iconst_0
+      14: aload_1
+      15: aastore
+      16: dup
+      17: iconst_1
+      18: aload_2
+      19: aastore
+      20: invokeinterface #28,  4           // InterfaceMethod java/lang/reflect/InvocationHandler.invoke:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+      25: pop
+      26: return
+      27: athrow
+      28: astore_3
+      29: new           #42                 // class java/lang/reflect/UndeclaredThrowableException
+      32: dup
+      33: aload_3
+      34: invokespecial #45                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      37: athrow
+    Exception table:
+       from    to  target type
+           0    27    27   Class java/lang/Error
+           0    27    27   Class java/lang/RuntimeException
+           0    27    28   Class java/lang/Throwable
+
+  public final void update(java.lang.String, java.lang.String) throws ;
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field java/lang/reflect/Proxy.h:Ljava/lang/reflect/InvocationHandler;
+       4: aload_0
+       5: getstatic     #54                 // Field m4:Ljava/lang/reflect/Method;
+       8: iconst_2
+       9: anewarray     #22                 // class java/lang/Object
+      12: dup
+      13: iconst_0
+      14: aload_1
+      15: aastore
+      16: dup
+      17: iconst_1
+      18: aload_2
+      19: aastore
+      20: invokeinterface #28,  4           // InterfaceMethod java/lang/reflect/InvocationHandler.invoke:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+      25: pop
+      26: return
+      27: athrow
+      28: astore_3
+      29: new           #42                 // class java/lang/reflect/UndeclaredThrowableException
+      32: dup
+      33: aload_3
+      34: invokespecial #45                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      37: athrow
+    Exception table:
+       from    to  target type
+           0    27    27   Class java/lang/Error
+           0    27    27   Class java/lang/RuntimeException
+           0    27    28   Class java/lang/Throwable
+
+  public final java.lang.String toString() throws ;
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field java/lang/reflect/Proxy.h:Ljava/lang/reflect/InvocationHandler;
+       4: aload_0
+       5: getstatic     #59                 // Field m2:Ljava/lang/reflect/Method;
+       8: aconst_null
+       9: invokeinterface #28,  4           // InterfaceMethod java/lang/reflect/InvocationHandler.invoke:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+      14: checkcast     #61                 // class java/lang/String
+      17: areturn
+      18: athrow
+      19: astore_1
+      20: new           #42                 // class java/lang/reflect/UndeclaredThrowableException
+      23: dup
+      24: aload_1
+      25: invokespecial #45                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      28: athrow
+    Exception table:
+       from    to  target type
+           0    18    18   Class java/lang/Error
+           0    18    18   Class java/lang/RuntimeException
+           0    18    19   Class java/lang/Throwable
+
+  public final int hashCode() throws ;
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field java/lang/reflect/Proxy.h:Ljava/lang/reflect/InvocationHandler;
+       4: aload_0
+       5: getstatic     #66                 // Field m0:Ljava/lang/reflect/Method;
+       8: aconst_null
+       9: invokeinterface #28,  4           // InterfaceMethod java/lang/reflect/InvocationHandler.invoke:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+      14: checkcast     #68                 // class java/lang/Integer
+      17: invokevirtual #71                 // Method java/lang/Integer.intValue:()I
+      20: ireturn
+      21: athrow
+      22: astore_1
+      23: new           #42                 // class java/lang/reflect/UndeclaredThrowableException
+      26: dup
+      27: aload_1
+      28: invokespecial #45                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      31: athrow
+    Exception table:
+       from    to  target type
+           0    21    21   Class java/lang/Error
+           0    21    21   Class java/lang/RuntimeException
+           0    21    22   Class java/lang/Throwable
+
+  static {} throws ;
+    Code:
+       0: ldc           #75                 // String java.lang.Object
+       2: invokestatic  #81                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+       5: ldc           #82                 // String equals
+       7: iconst_1
+       8: anewarray     #77                 // class java/lang/Class
+      11: dup
+      12: iconst_0
+      13: ldc           #75                 // String java.lang.Object
+      15: invokestatic  #81                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+      18: aastore
+      19: invokevirtual #86                 // Method java/lang/Class.getMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+      22: putstatic     #20                 // Field m1:Ljava/lang/reflect/Method;
+      25: ldc           #88                 // String cn.cecurio.proxy.dynamic.jdk.UserService
+      27: invokestatic  #81                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+      30: ldc           #89                 // String add
+      32: iconst_2
+      33: anewarray     #77                 // class java/lang/Class
+      36: dup
+      37: iconst_0
+      38: ldc           #91                 // String java.lang.String
+      40: invokestatic  #81                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+      43: aastore
+      44: dup
+      45: iconst_1
+      46: ldc           #91                 // String java.lang.String
+      48: invokestatic  #81                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+      51: aastore
+      52: invokevirtual #86                 // Method java/lang/Class.getMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+      55: putstatic     #50                 // Field m3:Ljava/lang/reflect/Method;
+      58: ldc           #88                 // String cn.cecurio.proxy.dynamic.jdk.UserService
+      60: invokestatic  #81                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+      63: ldc           #92                 // String update
+      65: iconst_2
+      66: anewarray     #77                 // class java/lang/Class
+      69: dup
+      70: iconst_0
+      71: ldc           #91                 // String java.lang.String
+      73: invokestatic  #81                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+      76: aastore
+      77: dup
+      78: iconst_1
+      79: ldc           #91                 // String java.lang.String
+      81: invokestatic  #81                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+      84: aastore
+      85: invokevirtual #86                 // Method java/lang/Class.getMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+      88: putstatic     #54                 // Field m4:Ljava/lang/reflect/Method;
+      91: ldc           #75                 // String java.lang.Object
+      93: invokestatic  #81                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+      96: ldc           #93                 // String toString
+      98: iconst_0
+      99: anewarray     #77                 // class java/lang/Class
+     102: invokevirtual #86                 // Method java/lang/Class.getMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     105: putstatic     #59                 // Field m2:Ljava/lang/reflect/Method;
+     108: ldc           #75                 // String java.lang.Object
+     110: invokestatic  #81                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+     113: ldc           #94                 // String hashCode
+     115: iconst_0
+     116: anewarray     #77                 // class java/lang/Class
+     119: invokevirtual #86                 // Method java/lang/Class.getMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     122: putstatic     #66                 // Field m0:Ljava/lang/reflect/Method;
+     125: return
+     126: astore_1
+     127: new           #98                 // class java/lang/NoSuchMethodError
+     130: dup
+     131: aload_1
+     132: invokevirtual #101                // Method java/lang/Throwable.getMessage:()Ljava/lang/String;
+     135: invokespecial #104                // Method java/lang/NoSuchMethodError."<init>":(Ljava/lang/String;)V
+     138: athrow
+     139: astore_1
+     140: new           #108                // class java/lang/NoClassDefFoundError
+     143: dup
+     144: aload_1
+     145: invokevirtual #101                // Method java/lang/Throwable.getMessage:()Ljava/lang/String;
+     148: invokespecial #109                // Method java/lang/NoClassDefFoundError."<init>":(Ljava/lang/String;)V
+     151: athrow
+    Exception table:
+       from    to  target type
+           0   126   126   Class java/lang/NoSuchMethodException
+           0   126   139   Class java/lang/ClassNotFoundException
+}
